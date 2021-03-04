@@ -1,6 +1,7 @@
 package com.pding85.allocation;
 
 import org.apache.commons.lang.time.StopWatch;
+import org.jctools.queues.MpscLinkedQueue;
 import sun.misc.Unsafe;
 
 import java.lang.reflect.Field;
@@ -15,11 +16,12 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+//  MpscLinkedQueue 和 ConcurrentLinkedQueue 性能比较
 public class TaskThread extends Thread  {
 
     Lock lock = new ReentrantLock();
     Condition signal = lock.newCondition();
-    Queue<Long> queue = new ConcurrentLinkedQueue<>();
+    Queue<Long> queue = new MpscLinkedQueue<>();
     static Unsafe unsafe;
     static final Long count = 1000_000L;
     AtomicBoolean status = new AtomicBoolean(false);

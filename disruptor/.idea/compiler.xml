@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="elasticjob-error-handler-email" />
+        <module name="elasticjob-http-executor" />
+        <module name="yarnExample" />
+        <module name="elasticjob-script-executor" />
+        <module name="elasticjob-error-handler-wechat" />
+        <module name="elasticjob-lite-lifecycle" />
+        <module name="disruptor" />
+        <module name="elasticjob-tracing-rdb" />
+        <module name="elasticjob-lite-core" />
+        <module name="elasticjob-cloud-executor" />
+        <module name="elasticjob-registry-center" />
+        <module name="elasticjob-error-handler-dingtalk" />
+        <module name="elasticjob-error-handler-spi" />
+        <module name="elasticjob-executor-kernel" />
+        <module name="elasticjob-simple-executor" />
+        <module name="elasticjob-api" />
+        <module name="elasticjob-dataflow-executor" />
+        <module name="elasticjob-cloud-scheduler" />
+        <module name="elasticjob-tracing-api" />
+        <module name="elasticjob-error-handler-general" />
+        <module name="elasticjob-lite-spring-namespace" />
+        <module name="elasticjob-cloud-common" />
+        <module name="elasticjob-lite-spring-boot-starter" />
+        <module name="elasticjob-restful" />
+        <module name="elasticjob-infra-common" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

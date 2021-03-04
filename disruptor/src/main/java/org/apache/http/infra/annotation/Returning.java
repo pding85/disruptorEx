@@ -17,7 +17,9 @@
 
 package org.apache.http.infra.annotation;
 
- 
+
+
+import org.apache.http.infra.consts.Http;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

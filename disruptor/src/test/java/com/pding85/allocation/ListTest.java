@@ -42,14 +42,7 @@ public class ListTest {
         for (int i = 0 ; i < 100; ++i) {
             valueList.add("@222222");
         }
-        sleep1(1);
-        valueList.add("@1222222");
-        sleep1(1);
-        valueList.add("@1222222");
-        valueList.add("@1222222");
-        valueList.add("@222222");
-        valueList.add("@1222222");
-        valueList.add("@1222222");
+
 
         iteration1(valueList);
     }

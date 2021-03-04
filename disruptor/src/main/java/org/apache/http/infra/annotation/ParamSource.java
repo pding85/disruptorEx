@@ -20,7 +20,7 @@ package org.apache.http.infra.annotation;
 /**
  * Sources of parameter.
  *
- * @see org.apache.shardingsphere.elasticjob.restful.annotation.Param
+ * @see 
  */
 public enum ParamSource {
     /**
