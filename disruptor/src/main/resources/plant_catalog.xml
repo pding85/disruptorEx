@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Edited with XML Spy v2007 (http://www.altova.com) -->
+<CataLog>
+	<Plant>
+		<Common>Bloodroot</Common>
+		<Bname>Sanguinaria canadensis</Bname>
+		<Zone>4</Zone>
+		<Light>Mostly Shady</Light>
+		<Price>$2.44</Price>
+
+	</Plant>
+
+</CataLog>

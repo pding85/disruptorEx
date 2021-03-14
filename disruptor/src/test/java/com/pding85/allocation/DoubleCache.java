@@ -1,7 +1,6 @@
 package com.pding85.allocation;
 
-import com.pding85.fanxing.Apple;
-import org.apache.ignite.internal.processors.cache.persistence.wal.SegmentedRingByteBuffer;
+
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -48,7 +47,7 @@ public class DoubleCache<T> {
         // 先判断next对应的容器是否为空
         ConcurrentHashMap<T, Byte> last = cache.get(next);
         if (last.isEmpty()) {
-            System.out.println("上一次遍历完");
+           // System.out.println("上一次遍历完");
         } else {
             System.out.println("上一次遍历 not over");
         }
@@ -104,13 +103,14 @@ public class DoubleCache<T> {
                 while (true) {
                     try {
                         Set<String> data = cache.read();
+                        if (batch % 10000 == 0)
                         System.out.println("batch:" + batch + ", size:" + data.size());
                         ++batch;
                     } catch (Exception e) {
                         e.printStackTrace();
                     } finally {
                         try {
-                            TimeUnit.MILLISECONDS.sleep(10);
+                            TimeUnit.MICROSECONDS.sleep(100);
                         } catch (Exception e) {}
                     }
                 }
